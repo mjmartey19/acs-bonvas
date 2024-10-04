@@ -428,8 +428,13 @@ a {
         padding: 0;
     }
 
+#feature-first p {
+    font-size: 0.8rem;
+}
 
-
+#feature-first img {
+    margin-top: 30px;
+}
 }
 
 /********** common setting **********/
@@ -528,6 +533,7 @@ button {
 #feature-first {
     background: linear-gradient(168deg, #ffffff 55%, #F5F5F5 0);
 }
+
 
 #feature-last {
     background: #fff;
