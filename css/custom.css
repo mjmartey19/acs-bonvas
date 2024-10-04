@@ -1,0 +1,563 @@
+
+/* Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.section {
+    padding: 20px 100px;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('../img/img/hero-image.png') no-repeat center center/cover;
+    color: white;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.hero-content,
+.header {
+    position: relative;
+    z-index: 2;
+    padding-bottom: 40px;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-left {
+    text-align: left;
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.branding-text {
+    font-size: 1rem;
+    width: fit-content;
+    border-radius: 50px;
+    padding: 20px 40px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.hero-heading h1 {
+    font-size: 4rem;
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+}
+.cta-button{
+    display: flex;
+    gap: 10px;
+    width: fit-content;
+    padding: 20px 30px;
+    border-radius: 50px;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e4dede;
+    color: #000;
+    text-decoration: none;
+}
+
+/* Hero Right */
+.hero-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-right .social-media-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.hero-right .social-media-icons a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.hero-right .social-media-icons a:hover {
+    background-color: #f0a500;
+}
+
+.hero-right .social-media-icons a img {
+    width: 10px;
+}
+
+
+.scroll-down {
+    display: flex;
+    align-items: center;
+}
+
+.scroll-down span {
+    display: inline-block;
+    transform: rotate(-90deg);
+    font-size: 20px;
+}
+
+.scroll-down img {
+    height: 100px;
+    margin-top: 10px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+.african-pattern img {
+    width: 100%;
+    height: auto;
+}
+
+.honour-section {
+    padding: 40px 100px;
+}
+
+.honour-section h1 {
+    text-align: center;
+}
+
+.honour-section .container {
+    padding-top: 4rem;
+    position: relative;
+}
+
+.honour-section .honour-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 80px;
+    background-color: #D34A26;
+    color: white;
+    border-radius: 30px;
+}
+
+.honour-section .honour-box p {
+    max-width: 60%;
+}
+
+.honour-section .honour-box img {
+    position: absolute;
+    right: 80px;
+    top: 0;
+    width: 15rem;
+}
+
+.gift-content .title {
+    text-align: center;
+    font-weight: 400;
+    padding: 0 10rem;
+}
+
+.gift-box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 3rem;
+}
+
+.gift-box-container .gift-card {
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    flex-basis: 20rem;
+}
+
+.gift-box-container .card-icon {
+    width: 4rem;
+    text-align: center;
+    height: auto;
+    margin-bottom: 1.2rem;
+}
+
+.gift-box-container h3 {
+    font-size: 1.2rem;
+    color: #e74c3c;
+    margin-bottom: 0.8rem;
+}
+
+.gift-box-container .desc {
+    text-align: left;
+}
+
+.gift-box-container p {
+    font-size: 0.95rem;
+    margin-bottom: 0.8rem;
+    color: #333;
+}
+
+.gift-box-container strong {
+    font-weight: bold;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .hero-section {
+        padding: 20px 50px;
+    }
+
+    .hero-left {
+        max-width: 40rem;
+    }
+
+    .hero-heading h1 {
+        font-size: 2.5rem;
+    }
+
+    .cta-button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+
+    .branding-text {
+        font-size: 1rem;
+        padding: 15px 30px;
+    }
+
+    .honour-section .honour-box {
+        padding: 60px;
+    }
+
+    .honour-section .honour-box p {
+        max-width: 60%;
+    }
+
+    .honour-section .honour-box img {
+        position: absolute;
+        right: 3rem;
+        top: 0;
+        width: 14rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 20px;
+    }
+
+    .hero-left {
+        max-width: 35rem;
+    }
+
+    .hero-heading h1 {
+        font-size: 2.2rem;
+    }
+
+    .cta-button {
+        padding: 14px 20px;
+        font-size: 1rem;
+    }
+
+    .branding-text {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+
+    .honour-section {
+        padding: 40px 60px;
+    }
+
+    .honour-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .honour-section .honour-box {
+        padding: 40px;
+    }
+
+    .honour-section .honour-box p {
+        max-width: 60%;
+        font-size: 0.8rem;
+    }
+
+    .honour-section .honour-box img {
+        right: 2rem;
+        width: 12rem;
+    }
+
+    .gift-content .title {
+        padding: 0 2rem;
+    }
+
+    .gift-box-container .gift-card {
+        padding: 2rem;
+        flex-basis: 17rem;
+    }
+
+
+
+    .gift-box-container h3 {
+        font-size: 1rem;
+        color: #e74c3c;
+        margin-bottom: 0.8rem;
+    }
+
+    .gift-box-container .desc {
+        font-size: 0.8rem;
+    }
+
+    .gift-box-container p {
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+    .hero-section {
+        padding: 15px;
+    }
+
+    .hero-heading h1 {
+        font-size: 1.5rem;
+    }
+
+    .cta-button {
+        padding: 15px 25px;
+        font-size: 0.8rem;
+    }
+
+    .honour-section {
+        padding: 2rem;
+    }
+
+    .honour-section h1 {
+        font-size: 1.2rem;
+    }
+
+    .honour-section .honour-box {
+        padding: 30px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .honour-section .honour-box p {
+        max-width: 100%;
+    }
+
+    .honour-section .honour-box img {
+        position: static;
+        max-width: 9rem;
+    }
+
+    .gift-content .title {
+        padding: 0;
+    }
+
+
+}
+
+/********** common setting **********/
+
+
+/* logo styling */
+.col-2 img {
+    width: 100px;
+    height: 70px;
+    font-weight: bold;
+}
+
+
+/* Introductory text  */
+#lead {
+    color:#f8f7ff;  
+    background: transparent;
+    font-size: 18px;
+}
+
+
+
+a,
+button {
+    cursor: pointer;
+}
+
+.jumbotron {
+    margin-bottom: 0 !important;
+}
+
+.atlas-cta {
+    border-radius: 22px !important;
+    padding: 12px 30px !important;
+    font-weight: 700;
+    transition: .3s ease-in-out !important;
+}
+
+.atlas-cta:hover {
+    text-decoration: none;
+    transform: translateY(-5px);
+}
+
+.atlas-cta-wide {
+    width: 100%;
+}
+
+.cta-btn {
+    background: #fe7f2d;
+    color: #ffffff;
+}
+
+#price-table .cta-ghost {
+    border-radius: 30px;
+    border: 1px solid #fe7f2d;
+    color: black;
+}
+
+#price-table .cta-orange {
+    border-radius: 30px;
+    background-color: white;
+    color: #fe7f2d;
+}
+.feature a {
+    background: #fe7f2d;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.feature a:hover {
+    background: #fe7f2d;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+#banner {
+    background-size: cover;
+}
+
+/********** banner **********/
+#banner header {
+    overflow: hidden;
+}
+
+#banner header img {
+    max-width: 80px;
+}
+
+/********** feature (skew background) **********/
+.feature img {
+    width: 100%;
+    max-width: 480px;
+}
+
+#feature-first {
+    background: linear-gradient(168deg, #ffffff 55%, #F5F5F5 0);
+}
+
+#feature-last {
+    background: #fff;
+}
+
+/********** price table **********/
+#price-table {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+}
+
+#price-table__premium {
+    background: #fe7f2d;
+    color: #ffffff;
+}
+
+#price-table ul li {
+    padding: 5px 0;
+}
+
+
+/********** copyright **********/
+#copyright {
+    background: #192440;
+    padding: 1rem 3rem;
+}
+
+#copyright #social-media a {
+    width: 40px;
+    height: 40px;
+    border-radius: 99%;
+    background: #ffffff;
+    transition: .4s ease;
+}
+
+#copyright #social-media a i {
+    color: #192440;
+    font-size: 1.2rem;
+    line-height: 40px;
+}
+
+#copyright #social-media a:hover {
+    background: #fe7f2d;
+}
+
+#copyright #social-media a:hover i {
+    color: #ffffff;
+}
+
+/********** RWD **********/
+@media (max-width: 575px) {
+    #banner h1 {
+        font-size: 3.6rem;
+    }
+}
