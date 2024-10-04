@@ -324,7 +324,7 @@ a {
     }
 
     .branding-text {
-        font-size: 0.9rem;
+        font-size: 1rem;
         padding: 10px 20px;
     }
 
@@ -342,7 +342,7 @@ a {
 
     .honour-section .honour-box p {
         max-width: 60%;
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .honour-section .honour-box img {
@@ -364,15 +364,15 @@ a {
     .gift-box-container h3 {
         font-size: 1rem;
         color: #e74c3c;
-        margin-bottom: 0.8rem;
+        margin-bottom: 1rem;
     }
 
     .gift-box-container .desc {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .gift-box-container p {
-        font-size: 0.8rem;
+        font-size: 1rem;
         margin-bottom: 10px;
         color: #333;
     }
@@ -397,7 +397,7 @@ a {
 
     .cta-button {
         padding: 15px 25px;
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .honour-section {
@@ -428,12 +428,21 @@ a {
         padding: 0;
     }
 
+    .gift-box-container .gift-card {
+        padding: 2rem;
+        flex-basis: 20rem;
+    }
+
 #feature-first p {
     font-size: 0.8rem;
 }
 
 #feature-first img {
     margin-top: 30px;
+}
+
+#jumbotron p {
+    font-size: 0.8rem;
 }
 }
 
