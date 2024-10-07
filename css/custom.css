@@ -67,13 +67,17 @@ body {
 }
 
 .language-menu {
-    margin-left: auto;
-    background-color: tr;
+margin-left: auto;
+background-color: transparent;
 }
 
 .language-menu select {
     padding: 5px;
     font-size: 14px;
+    background: rgba(0, 0, 0, 0.5);
+        color: #ffffff;
+        border: none;
+        border-radius:1rem
 }
 
 
