@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="eng">
 
 <head>
     <meta charset="UTF-8">
@@ -23,20 +23,29 @@
     <div class="hero-section section">
         <div class="hero-overlay"></div>
         <div class="header">
-            <img src="img/img/logo.png" alt="BonVas Tours Logo" class="logo">
+            <div class="logo-container">
+                <img src="img/img/logo.png" alt="BonVas Tours Logo" class="logo">
+            </div>
+
+            <div class="language-menu">
+                <select name="language" id="language-select">
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                    <option value="es">Español</option>
+                </select>
+            </div>
         </div>
+
         <div class="hero-content">
             <div class="hero-left">
                 <div class="branding">
-                    <h2 class="branding-text">Feel the experience</h2>
+                    <h2 id="branding-text" class="branding-text">Feel the experience</h2>
                 </div>
                 <div class="hero-heading">
-                    <h1>African Cancer Coalition Meeting
-                        American Cancer Society
-                    </h1>
+                    <h1 id="hero-heading">African Cancer Coalition Meeting<br> American Cancer Society</h1>
                 </div>
                 <a href="#" class="cta-button">
-                    <span>Get Exclusive Packages</span>
+                    <span id="cta-button-text">Get Exclusive Packages</span>
                     <img src="img/img/cta-arrow.svg" alt="Arrow Right">
                 </a>
             </div>
@@ -51,8 +60,8 @@
                             src="img/img/linkedin-icon.svg" alt="LinkedIn"></a>
                 </div>
                 <div class="scroll-down">
-                    <span>Scroll</span>
-                    <a href="#about"><img src="img/img/scroll-down.svg" alt="Scroll Down"></a>
+                    <a href="#about"><span id="scroll-down">Scroll Down</span>
+                        <img src="img/img/scroll-down.svg" alt="Scroll Down"></a>
                 </div>
             </div>
         </div>
@@ -65,12 +74,13 @@
 
     <!-- Gift Section  -->
     <div class="honour-section" id="about">
-        <h1>Welcome to Ghana, Champions of Hope!</h1>
+        <h1 id="honour-heading">Welcome to Ghana, Champions of Hope!</h1>
 
         <div class="container">
             <div class="honour-box">
                 <div>
-                    <p>Bonvas Tours is honored to host the African Cancer Coalition Meeting, organized by the American
+                    <p id="honour-text">Bonvas Tours is honored to host the African Cancer Coalition Meeting, organized
+                        by the American
                         Cancer
                         Society. We
                         extend our warmest greetings and hope your time here is both productive and enriching. As a
@@ -95,59 +105,59 @@
 
     <!-- Contain in Gift Box  -->
     <div class="gift-content section">
-        <section class="gift-box-container">
+        <section class="gift-box-container" id="gift-box-items">
             <div class="gift-card">
                 <img src="img/img/tote-bag.svg" alt="Customized Tote Bag" class="card-icon">
-                <h3>Customized Tote Bag</h3>
+                <h3 id="tote-bag-title">Customized Tote Bag</h3>
                 <div class="desc">
-                    <p><strong>Highlight:</strong> Made from organic cotton, this durable tote bag is a sustainable
-                        alternative to
-                        plastic bags.</p>
-                    <p><strong>Purpose:</strong> Provides a stylish, eco-friendly way to carry your belongings while
-                        reducing
-                        plastic waste.</p>
+                    <p><strong>Highlight:</strong> <span id="tote-bag-highlight">Made from organic cotton, this durable
+                            tote
+                            bag is a sustainable
+                            alternative to plastic bags.</span></p>
+                    <p><strong>Purpose:</strong> <span id="tote-bag-purpose">Provides a stylish, eco-friendly way to
+                            carry
+                            your belongings while
+                            reducing plastic waste.</span></p>
                 </div>
             </div>
 
             <div class="gift-card">
                 <img src="img/img/notepad.svg" alt="Customized Notepad" class="card-icon">
-                <h3>Customized Notepad</h3>
+                <h3 id="notepad-title">Customized Notepad</h3>
                 <div class="desc">
-                    <p><strong>Highlight:</strong> Made from recycled materials sourced from responsibly managed
-                        vendors,
-                        this
-                        notepad supports sustainable production.</p>
-                    <p><strong>Purpose:</strong> A practical tool for note-taking that promotes environmental
-                        consciousness
-                        and
-                        local craftsmanship.</p>
+                    <p><strong>Highlight:</strong> <span id="notepad-highlight">Made from recycled materials sourced
+                            from
+                            responsibly managed vendors, this
+                            notepad supports sustainable production.</span></p>
+                    <p><strong>Purpose:</strong> <span id="notepad-purpose">A practical tool for note-taking that
+                            promotes
+                            environmental consciousness and
+                            local craftsmanship.</span></p>
                 </div>
             </div>
 
             <div class="gift-card">
                 <img src="img/img/hand-fan.svg" alt="Ghanaian Hand Fan" class="card-icon">
-                <h3>Ghanaian-Made Hand Fan</h3>
+                <h3 id="fan-title">Ghanaian-Made Hand Fan</h3>
                 <div class="desc">
-                    <div class="desc">
-                        <p><strong>Highlight:</strong> Handcrafted with care, this fan represents traditional Ghanaian
-                            craftsmanship.
-                        </p>
-                        <p><strong>Purpose:</strong> A practical and cultural accessory, perfect for staying cool in
-                            Ghana's
-                            climate.
-                        </p>
-                    </div>
+                    <p><strong>Highlight:</strong> <span id="fan-highlight">Handcrafted with care, this fan represents
+                            traditional Ghanaian craftsmanship.</span></p>
+                    <p><strong>Purpose:</strong> <span id="fan-purpose">A practical and cultural accessory, perfect for
+                            staying cool in Ghana's
+                            climate.</span></p>
                 </div>
             </div>
 
             <div class="gift-card">
                 <img src="img/img/chocolate.svg" alt="Ghanaian Chocolate" class="card-icon">
-                <h3>Ghanaian Chocolate</h3>
+                <h3 id="chocolate-title">Ghanaian Chocolate</h3>
                 <div class="desc">
-                    <p><strong>Highlight:</strong> Sourced from local farmers, this chocolate supports sustainable cocoa
-                        production
-                        in Ghana.</p>
-                    <p><strong>Purpose:</strong> A delicious treat offering a taste of Ghanaian culture.</p>
+                    <p><strong>Highlight:</strong> <span id="chocolate-highlight">Sourced from local farmers, this
+                            chocolate
+                            supports sustainable cocoa production in Ghana.</span></p>
+                    <p><strong>Purpose:</strong> <span id="chocolate-purpose">A delicious treat offering a taste of
+                            Ghanaian
+                            culture.</span></p>
                 </div>
             </div>
         </section>
@@ -210,7 +220,7 @@
                 <ul class="list-unstyled">
                     <li>5% discount on tour packages</li>
                 </ul>
-                <a href="#" class="btn my-4 font-weight-bold atlas-cta cta-ghost">Book Now</a>
+                <a href="#" class="btn my-4 font-weight-bold atlas-cta cta-ghost book-now">Book Now</a>
             </div>
             <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"
                 class="col-md-4 text-center py-4 mt-5 rounded" id="price-table__premium">
@@ -219,7 +229,7 @@
                 <ul class="list-unstyled">
                     <li>10% discount on tour packages </li>
                 </ul>
-                <a href="#" class="btn my-4 font-weight-bold atlas-cta cta-orange">Book Now</a>
+                <a href="#" class="btn my-4 font-weight-bold atlas-cta cta-orange book-now">Book Now</a>
             </div>
             <div data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true"
                 class="col-md-4 text-center py-4 mt-5">
@@ -228,7 +238,7 @@
                 <ul class="list-unstyled">
                     <li>15% discount</li>
                 </ul>
-                <a href="#" class="btn my-4 font-weight-bold atlas-cta cta-ghost">Book Now</a>
+                <a href="#" class="btn my-4 font-weight-bold atlas-cta cta-ghost book-now">Book Now</a>
             </div>
         </div>
     </div>
@@ -248,7 +258,7 @@
                         <br />
                         <li>Visit our website to explore our range
                             of services and exclusive offers:</li>
-                        <li>www.bonvastours.com</li>
+                        <li><a href="www.bonvastours.com "> www.bonvastours.com </a></li>
                     </ul>
                 </div>
                 <div class="col-md-6 col-12 mt-4 mt-md-0">
@@ -288,6 +298,7 @@
     </div>
 
     <!-- AOS -->
+    <script src="js/translator.js"></script>
     <script src="js/aos.js"></script>
     <script>
         AOS.init({
