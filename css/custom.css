@@ -12,6 +12,7 @@ html {
 
 body {
     font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
 }
 
 .section {
@@ -195,7 +196,7 @@ a {
     position: absolute;
     right: 80px;
     top: 0;
-    width: 15rem;
+    width: 25rem;
 }
 
 .gift-content .title {
@@ -289,20 +290,21 @@ a {
         padding: 15px 30px;
     }
 
-    .honour-section .honour-box {
-        padding: 60px;
-    }
 
-    .honour-section .honour-box p {
-        max-width: 60%;
+    .honour-section .honour-box {
+        padding: 30px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
     }
 
     .honour-section .honour-box img {
-        position: absolute;
-        right: 3rem;
-        top: 0;
-        width: 14rem;
+        position: static;
+        width: 15rem;
     }
+        .honour-section .honour-box p {
+            max-width: 100% !important;
+        }
 }
 
 @media (max-width: 768px) {
@@ -337,6 +339,18 @@ a {
     }
 
     .honour-section .honour-box {
+        padding: 30px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .honour-section .honour-box img {
+        position: static;
+        width: 15rem;
+    }
+
+    .honour-section .honour-box {
         padding: 40px;
     }
 
@@ -345,11 +359,7 @@ a {
         font-size: 1rem;
     }
 
-    .honour-section .honour-box img {
-        right: 2rem;
-        width: 12rem;
-    }
-
+  
     .gift-content .title {
         padding: 0 2rem;
     }
@@ -387,6 +397,9 @@ a {
 
 
 @media (max-width: 480px) {
+    .section {
+            padding: 20px 20px;
+        }
     .hero-section {
         padding: 15px;
     }
@@ -401,15 +414,23 @@ a {
     }
 
     .honour-section {
-        padding: 2rem;
+        padding: 0rem;
     }
+        .honour-section .container {
+            padding-top: 0rem ;
+            position: relative;
+        }
 
-    .honour-section h1 {
-        font-size: 1.2rem;
-    }
+        
+
+         .honour-section h1 {
+             padding: 2rem 0;
+             font-weight: 700;
+             font-size: 2rem;
+         } 
+
 
     .honour-section .honour-box {
-        padding: 30px;
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
@@ -421,7 +442,7 @@ a {
 
     .honour-section .honour-box img {
         position: static;
-        max-width: 9rem;
+        width: 15rem;
     }
 
     .gift-content .title {
@@ -430,7 +451,7 @@ a {
 
     .gift-box-container .gift-card {
         padding: 2rem;
-        flex-basis: 20rem;
+        flex-basis: 30rem;
     }
 
 #feature-first p {
@@ -440,6 +461,11 @@ a {
 #feature-first img {
     margin-top: 30px;
 }
+.feature img {
+    width: 100% !important;
+    max-width: 300px !important;
+}
+
 
 #jumbotron p {
     font-size: 0.8rem;
@@ -496,6 +522,10 @@ button {
     color: #ffffff;
 }
 
+#price-table {
+  margin-top: 3rem;
+}
+
 #price-table .cta-ghost {
     border-radius: 30px;
     border: 1px solid #fe7f2d;
@@ -550,8 +580,8 @@ button {
 
 /********** price table **********/
 #price-table {
-    padding-top: 4rem !important;
-    padding-bottom: 4rem !important;
+    padding-top: 4rem; 
+    padding-bottom: 4rem 
 }
 
 #price-table__premium {
