@@ -33,29 +33,34 @@ const translations = {
     website: "Visit our website",
     copyright: "Copyright © Bonvas Tours Ltd, Kumasi, Ghana.",
     giftBoxContent: {
-      items: [
+    items: [
         {
-          title: "Customized Tote Bag",
-          highlight: "Made from organic cotton, this durable tote bag is a sustainable alternative to plastic bags.",
-          purpose: "Provides a stylish, eco-friendly way to carry your belongings while reducing plastic waste."
+            title: "Customized Tote Bag",
+            highlight: "Made from organic cotton, this durable tote bag is a sustainable alternative to plastic bags.",
+            purpose: "Provides a stylish, eco-friendly way to carry your belongings while reducing plastic waste.",
+            image: "img/img/tote-bag.svg"
         },
         {
-          title: "Customized Notepad",
-          highlight: "Made from recycled materials sourced from responsibly managed vendors, this notepad supports sustainable production.",
-          purpose: "A practical tool for note-taking that promotes environmental consciousness and local craftsmanship."
+            title: "Customized Notepad",
+            highlight: "Made from recycled materials sourced from responsibly managed vendors, this notepad supports sustainable production.",
+            purpose: "A practical tool for note-taking that promotes environmental consciousness and local craftsmanship.",
+            image: "img/img/notepad.svg"
         },
         {
-          title: "Ghanaian-Made Hand Fan",
-          highlight: "Handcrafted with care, this fan represents traditional Ghanaian craftsmanship.",
-          purpose: "A practical and cultural accessory, perfect for staying cool in Ghana's climate."
+            title: "Ghanaian-Made Hand Fan",
+            highlight: "Handcrafted with care, this fan represents traditional Ghanaian craftsmanship.",
+            purpose: "A practical and cultural accessory, perfect for staying cool in Ghana's climate.",
+            image: "img/img/hand-fan.svg"
         },
         {
-          title: "Ghanaian Chocolate",
-          highlight: "Sourced from local farmers, this chocolate supports sustainable cocoa production in Ghana.",
-          purpose: "A delicious treat offering a taste of Ghanaian culture."
+            title: "Ghanaian Chocolate",
+            highlight: "Sourced from local farmers, this chocolate supports sustainable cocoa production in Ghana.",
+            purpose: "A delicious treat offering a taste of Ghanaian culture.",
+            image: "img/img/chocolate.svg"
         }
-      ]
-    }
+    ]
+}
+
   },
   fr: {
     heroHeading: "Réunion de la Coalition Africaine contre le Cancer<br> Société Américaine du Cancer",
@@ -95,22 +100,28 @@ const translations = {
         {
           title: "Sac fourre-tout Personnalisé",
           highlight: "Fabriqué en coton biologique, ce sac fourre-tout durable est une alternative durable aux sacs en plastique.",
-          purpose: "Offre un moyen élégant et écologique de transporter vos affaires tout en réduisant les déchets plastiques."
+          purpose: "Offre un moyen élégant et écologique de transporter vos affaires tout en réduisant les déchets plastiques.",
+          image: "img/img/tote-bag.svg"
+
         },
         {
           title: "Bloc-notes Personnalisé",
           highlight: "Fabriqué à partir de matériaux recyclés provenant de fournisseurs gérés de manière responsable, ce bloc-notes soutient une production durable.",
-          purpose: "Un outil pratique pour prendre des notes qui promeut la conscience environnementale et l'artisanat local."
+          purpose: "Un outil pratique pour prendre des notes qui promeut la conscience environnementale et l'artisanat local.",
+          image: "img/img/notepad.svg"
         },
         {
           title: "Éventail Ghanéen",
           highlight: "Fabriqué à la main avec soin, cet éventail représente l'artisanat traditionnel ghanéen.",
-          purpose: "Un accessoire pratique et culturel, parfait pour rester au frais dans le climat ghanéen."
+          purpose: "Un accessoire pratique et culturel, parfait pour rester au frais dans le climat ghanéen.",
+          image: "img/img/hand-fan.svg"
         },
         {
           title: "Chocolat Ghanéen",
           highlight: "Sourcé auprès de fermiers locaux, ce chocolat soutient la production de cacao durable au Ghana.",
-          purpose: "Une délicieuse friandise offrant un goût de la culture ghanéenne."
+          purpose: "Une délicieuse friandise offrant un goût de la culture ghanéenne.",
+          image: "img/img/chocolate.svg"
+
         }
       ]
     }
@@ -153,22 +164,29 @@ const translations = {
         {
           title: "Bolsa de Tote Personalizada",
           highlight: "Hecha de algodón orgánico, esta bolsa de tote durable es una alternativa sostenible a las bolsas de plástico.",
-          purpose: "Proporciona una forma elegante y ecológica de llevar tus pertenencias mientras reduces los desechos plásticos."
+          purpose: "Proporciona una forma elegante y ecológica de llevar tus pertenencias mientras reduces los desechos plásticos.",
+          image: "img/img/tote-bag.svg"
+
         },
         {
           title: "Bloc de Notas Personalizado",
           highlight: "Hecho de materiales reciclados de proveedores gestionados de manera responsable, este bloc de notas apoya la producción sostenible.",
-          purpose: "Una herramienta práctica para tomar notas que promueve la conciencia ambiental y la artesanía local."
+          purpose: "Una herramienta práctica para tomar notas que promueve la conciencia ambiental y la artesanía local.",
+          image: "img/img/notepad.svg"
         },
         {
           title: "Abanico Ghanés",
           highlight: "Hecho a mano con cuidado, este abanico representa la artesanía tradicional ghanesa.",
-          purpose: "Un accesorio práctico y cultural, perfecto para mantenerse fresco en el clima de Ghana."
+          purpose: "Un accesorio práctico y cultural, perfecto para mantenerse fresco en el clima de Ghana.",
+          image: "img/img/hand-fan.svg"
         },
         {
           title: "Chocolate Ghanés",
           highlight: "Obtenido de agricultores locales, este chocolate apoya la producción de cacao sostenible en Ghana.",
-          purpose: "Un delicioso manjar que ofrece un sabor de la cultura ghanesa."
+          purpose: "Un delicioso manjar que ofrece un sabor de la cultura ghanesa.",
+          image: "img/img/chocolate.svg"
+
+          
         }
       ]
     }
@@ -230,19 +248,20 @@ function translatePage(language) {
   const giftBoxContainer = document.querySelector(".gift-box-container");
   giftBoxContainer.innerHTML = ""; // Clear existing items
 
-  translations[language].giftBoxContent.items.forEach(item => {
-    const itemElement = document.createElement("div");
-    itemElement.classList.add("gift-card");
-    itemElement.innerHTML = `
-      <img src="img/img/tote-bag.svg" alt="${item.title}" class="card-icon">
-      <h3>${item.title}</h3>
-      <div class="desc">
-        <p><strong>Highlight:</strong> ${item.highlight}</p>
-        <p><strong>Purpose:</strong> ${item.purpose}</p>
-      </div>
-    `;
-    giftBoxContainer.appendChild(itemElement);
-  });
+translations[language].giftBoxContent.items.forEach(item => {
+  const itemElement = document.createElement("div");
+  itemElement.classList.add("gift-card");
+  itemElement.innerHTML = `
+    <img src="${item.image}" alt="${item.title}" class="card-icon">
+    <h3>${item.title}</h3>
+    <div class="desc">
+      <p><strong>Highlight:</strong> ${item.highlight}</p>
+      <p><strong>Purpose:</strong> ${item.purpose}</p>
+    </div>
+  `;
+  giftBoxContainer.appendChild(itemElement);
+});
+
 }
 
 // Function to set the selected language in local storage
