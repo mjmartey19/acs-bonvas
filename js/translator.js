@@ -7,11 +7,11 @@ const translations = {
     honourText: `Bonvas Tours is honored to host the African Cancer Coalition Meeting, organized by the American Cancer Society. We extend our warmest greetings and hope your time here is both productive and enriching. As a token of our appreciation for your commitment to creating a better world, please enjoy this welcome gift box.`,
     brandingText: "Feel the experience",
     exclusiveTourOffer: "Exclusive Tour Offer",
-    exclusiveTourDesc: "As a special thank you for attending the African Cancer Coalition Meeting, Bonvas Tours is delighted to offer exclusive discounts on our tour packages. These offers are designed to make your travel experience in Ghana even more memorable.",
-    tokenOfAppreciation: "A Token of Appreciation",
-    tokenDesc: "These exclusive offers are valid for bookings until 31st October 2024. By taking advantage of these discounts, you can explore the beauty of Ghana while enjoying significant savings.",
+    exclusiveTourDesc: "As a special thank you for attending the African Cancer Coalition Meeting, Bonvas Tours is delighted to offer exclusive discounts on our tour packages. These offers are designed to make your travel experience in Ghana even more memorable. These exclusive offers are valid for bookings until 31st October 2024. By taking advantage of these discounts, you can explore the beauty of Ghana while enjoying significant savings.",
     
-        exclusivePackages: "Exclusive Packages",
+    exclusivePackages: "Exclusive Packages",
+    exclusivePackagesDesc: "These exclusive packages are designed to give you special discounts on our tour packages. (Historicl, Adenture, Safari & Night life Packages)",
+
     standardPackage: "Standard Package",
     standardPrice: "250 USD",
     standardDiscount: "5% discount on tour packages",
@@ -24,7 +24,7 @@ const translations = {
     luxuryPrice: "1200 USD",
     luxuryDiscount: "15% discount",
     
-     bookNow: "Book Now",
+    bookNow: "Read More",
     
     stayConnected: "Stay Connected",
     contactInfo: "Follow us on social media for the latest updates and travel inspiration:",
@@ -70,11 +70,11 @@ const translations = {
     honourText: `Bonvas Tours est honoré d'accueillir la Réunion de la Coalition Africaine contre le Cancer, organisée par la Société Américaine du Cancer. Nous vous souhaitons la bienvenue et espérons que votre séjour ici sera à la fois productif et enrichissant. En signe de notre appréciation pour votre engagement à créer un monde meilleur, veuillez profiter de cette boîte cadeau de bienvenue.`,
     brandingText: "Ressentez l'expérience",
     exclusiveTourOffer: "Offre de Tour Exclusive",
-    exclusiveTourDesc: "En remerciement spécial pour avoir assisté à la Réunion de la Coalition Africaine contre le Cancer, Bonvas Tours est ravi d'offrir des réductions exclusives sur nos forfaits de visite. Ces offres sont conçues pour rendre votre expérience de voyage au Ghana encore plus mémorable.",
-    tokenOfAppreciation: "Un Signe d'Appréciation",
-    tokenDesc: "Ces offres exclusives sont valables pour les réservations jusqu'au 31 octobre 2024. En profitant de ces réductions, vous pourrez explorer la beauté du Ghana tout en profitant d'économies significatives.",
+    exclusiveTourDesc: "En remerciement spécial pour avoir assisté à la Réunion de la Coalition Africaine contre le Cancer, Bonvas Tours est ravi d'offrir des réductions exclusives sur nos forfaits de visite. Ces offres sont conçues pour rendre votre expérience de voyage au Ghana encore plus mémorable. Ces offres exclusives sont valables pour les réservations jusqu'au 31 octobre 2024. En profitant de ces réductions, vous pourrez explorer la beauté du Ghana tout en profitant d'économies significatives.",
     
-   exclusivePackages: "Forfaits Exclusifs",
+    exclusivePackages: "Forfaits Exclusifs",
+    exclusivePackagesDesc: "Ces forfaits exclusifs sont conçus pour vous offrir des réductions spéciales sur nos forfaits de visite (forfaits historiques, aventure, safari et vie nocturne).",
+   
     standardPackage: "Forfait Standard",
     standardPrice: "250 USD",
     standardDiscount: "5% de réduction sur les forfaits touristiques",
@@ -87,7 +87,7 @@ const translations = {
     luxuryPrice: "1200 USD",
     luxuryDiscount: "15% de réduction",
     
-    bookNow: "Réserver maintenant",
+    bookNow: "Lire la suite",
     
     stayConnected: "Restez Connecté",
     contactInfo: "Suivez-nous sur les réseaux sociaux pour les dernières mises à jour et inspirations de voyage:",
@@ -134,11 +134,9 @@ const translations = {
     honourText: `Bonvas Tours tiene el honor de ser anfitrión de la Reunión de la Coalición Africana contra el Cáncer, organizada por la Sociedad Americana del Cáncer. Les extendemos nuestras más cálidas bienvenidas y esperamos que su tiempo aquí sea productivo y enriquecedor. Como muestra de nuestro agradecimiento por su compromiso con la creación de un mundo mejor, disfruten de esta caja de regalo de bienvenida.`,
     brandingText: "Siente la experiencia",
     exclusiveTourOffer: "Oferta de Tour Exclusiva",
-    exclusiveTourDesc: "Como agradecimiento especial por asistir a la Reunión de la Coalición Africana contra el Cáncer, Bonvas Tours se complace en ofrecer descuentos exclusivos en nuestros paquetes turísticos. Estas ofertas están diseñadas para hacer que su experiencia de viaje en Ghana sea aún más memorable.",
-    tokenOfAppreciation: "Un Símbolo de Aprecio",
-    tokenDesc: "Estas ofertas exclusivas son válidas para reservas hasta el 31 de octubre de 2024. Al aprovechar estos descuentos, podrá explorar la belleza de Ghana mientras disfruta de importantes ahorros.",
-    
-    exclusivePackages: "Paquetes Exclusivos",
+    exclusiveTourDesc: "Como agradecimiento especial por asistir a la Reunión de la Coalición Africana contra el Cáncer, Bonvas Tours se complace en ofrecer descuentos exclusivos en nuestros paquetes turísticos. Estas ofertas están diseñadas para hacer que su experiencia de viaje en Ghana sea aún más memorable. Estas ofertas exclusivas son válidas para reservas hasta el 31 de octubre de 2024. Al aprovechar estos descuentos, podrá explorar la belleza de Ghana mientras disfruta de importantes ahorros.",
+    exclusivePackages: "Paquetes Exclusivos",exclusivePackagesDesc: "Estos paquetes exclusivos están diseñados para ofrecerle descuentos especiales en nuestros paquetes de tours (Paquetes históricos, de aventura, safari y vida nocturna).",
+
     standardPackage: "Paquete Estándar",
     standardPrice: "250 USD",
     standardDiscount: "5% de descuento en paquetes turísticos",
@@ -151,7 +149,7 @@ const translations = {
     luxuryPrice: "1200 USD",
     luxuryDiscount: "15% de descuento",
     
-    bookNow: "Reservar Ahora",
+    bookNow: "Leer más",
     
     stayConnected: "Mantente Conectado",
     contactInfo: "Síguenos en las redes sociales para obtener las últimas actualizaciones e inspiración para viajar:",
@@ -207,12 +205,13 @@ function translatePage(language) {
   // Features Section
   document.querySelector("#feature-first h2").textContent = translations[language].exclusiveTourOffer;
   document.querySelector("#feature-first p").textContent = translations[language].exclusiveTourDesc;
-  document.querySelector("#feature-last h2").textContent = translations[language].tokenOfAppreciation;
-  document.querySelector("#feature-last p").textContent = translations[language].tokenDesc;
+  
 
   // Price table section
   document.querySelector("#price-table h2").textContent = translations[language].exclusivePackages;
+  document.querySelector("#price-table p").textContent = translations[language].exclusivePackagesDesc;
   
+
   // Standard Package
   document.querySelector("#price-table .col-md-4:nth-child(1) h4").textContent = translations[language].standardPackage;
   document.querySelector("#price-table .col-md-4:nth-child(1) p").innerHTML = `$<span class="display-2 font-weight-bold">${translations[language].standardPrice.split(" ")[0]}</span> USD.`; 

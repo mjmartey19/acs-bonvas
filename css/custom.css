@@ -203,6 +203,11 @@ a {
     position: relative;
 }
 
+.read-more{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .honour-section .honour-box {
     display: flex;
     justify-content: space-between;
@@ -221,7 +226,7 @@ a {
     position: absolute;
     right: 80px;
     top: 0;
-    width: 25rem;
+    width: 20rem;
 }
 
 .gift-content .title {
